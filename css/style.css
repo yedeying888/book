@@ -164,12 +164,49 @@ footer .active {
 }
 
 .tablist-icon {
+  cursor: pointer;
   position: fixed;
-  padding: 12px;
-  padding-right: 15px;
+  padding: 8px;
+  padding-right: 10px;
   left: 0;
-  top: 20%;
+  top: 19.5%;
   color: white;
   background: #000;
   opacity: .5;
+  -webkit-transition: left .5s, opacity .8s;
+  -moz-transition: left .5s, opacity .8s;
+  -ms-transition: left .5s, opacity .8s;
+  -o-transition: left .5s, opacity .8s;
+  transition: left .5s, opacity .8s;
+}
+
+.tablist {
+  position: fixed;
+  top: 0;
+  color: white;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  min-width: 20%;
+  overflow: auto;
+  -webkit-transition: left .5s;
+  -moz-transition: left .5s;
+  -ms-transition: left .5s;
+  -o-transition: left .5s;
+  transition: left .5s;
+}
+
+.tablist li {
+  border-bottom: 1px solid #555;
+  display: block;
+  padding: 8px;
+  padding-right: 50px;
+  word-wrap: normal;
+}
+
+.tablist-item {
+  cursor: pointer;
+}
+
+.tablist::-webkit-scrollbar {
+  display: none;
 }

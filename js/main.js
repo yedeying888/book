@@ -1,4 +1,6 @@
 window.onload = function() {
+
+  // initial for carousel
   (function(){
     var startX;
     var endX;
@@ -32,6 +34,31 @@ window.onload = function() {
         $('.carousel').carousel('prev');
       }
       e.preventDefault();
+    }
+  })();
+
+  // initial for tablist
+  (function() {
+    var listIcon = document.querySelector('.tablist-icon');
+    var list = document.querySelector('.tablist');
+    var lis = document.querySelectorAll('.tablist-item');
+    var width = list.offsetWidth;
+    list.style.left = '-' + width + 'px';
+    listIcon.onclick = listOut;
+    listIcon.style.top = lis[3].offsetTop + 'px';
+
+    function listOut() {
+      listIcon.style.left = width + 'px';
+      listIcon.style.opacity = '.8';
+      list.style.left = '0';
+      listIcon.onclick = listIn;
+    }
+
+    function listIn() {
+      listIcon.style.left = '0';
+      listIcon.style.opacity = '.5';
+      list.style.left = '-' + width + 'px';
+      listIcon.onclick = listOut;
     }
   })();
 };
