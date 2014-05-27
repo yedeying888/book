@@ -133,6 +133,7 @@ a {
 
 .show-title {
   text-align: center;
+  font-size: 12px;
   padding: 10px;
   color: rgb(107,107,107);
 }
@@ -209,4 +210,38 @@ footer .active {
 
 .tablist::-webkit-scrollbar {
   display: none;
+}
+
+.tablist-fa {
+  min-width: 18px;
+  text-align: center;
+}
+
+/* ---- add for list.html ---- */
+
+.logo-fa {
+  font-size: 40px !important;
+}
+
+.nav-seperate,
+.nav-title {
+  font-size: 24px;
+}
+
+.nav-seperate {
+  color: rgb(201,201,201);
+  margin: 2px 18px;
+}
+
+.nav-title {
+  color: #fff;
+  margin: 4px 0;
+}
+
+.book-block {
+  padding: 10px 20px;
+}
+
+.book-block img {
+  width: 10%;
 }
