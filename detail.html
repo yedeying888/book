@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="clearfix">
+    <div class="nav-list float-left">
+      <a href="./index.html">
+        <i class="fa fa-angle-left logo-fa"></i>
+      </a>
+    </div>
+    <div class="nav-list float-left nav-seperate">|</div>
+    <div class="nav-list float-left nav-title">图书详情</div>
+    <div class="nav-list float-right">
+      <a href="./account.html" class="btn-user">
+        <i class="fa fa-user"></i>
+        <span class="icon-text">个人中心</span>
+      </a>
+    </div>
+    <div class="nav-list float-right">
+      <a href="./cart.html" class="btn-cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="icon-text">购物车</span>
+      </a>
+    </div>
+    <div class="nav-list float-right">
+      <a href="javascript:void(0)" class="btn-search">
+        <i class="fa fa-search"></i>
+        <span class="icon-text">搜索</span>
+      </a>
+    </div>
+  </header>
+  <div class="search-box">
+    <hr class="border-top">
+    <div class="search-wrap">
+      <div class="input-group">
+        <input class="form-control input-search" type="search" placeholder="book title, author or isbn">
+        <span class="input-group-btn">
+          <button class="btn btn-default btn-confirm-search" type="button">search</button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <section class="detail">
+    <div class="book-detail clearfix">
+      <img src="img/book.jpg" alt="" class="float-left">
+      <div class="detail-block">
+        <div class="title">MacTalk·人生元编程</div>
+        <div class="author">作者：【中国】池建强</div>
+        <div class="publish">版权：人民邮电出版社</div>
+        <div class="price">￥ 32.00</div>
+      </div>
+    </div>
+    <div class="btns clearfix">
+      <button class="buy float-left">购买</button>
+      <button class="add float-right">加到购物车</button>
+    </div>
+    <hr>
+    <div class="detail-tab">
+      <span>|</span>
+      <a class="left" href="javascript:void(0)">图书简介</a>
+      <a class="right" href="javascript:void(0)">评论详情</a>
+    </div>
+    <hr>
+    <div class="inner-detail clearfix">
+      <div class="triangle">
+        <div class="black"></div>
+        <div class="white"></div>
+      </div>
+      <div class="brief left-transition">
+        <p>《MacTalk·人生元编程》是一本随笔文集，主要内容来自作者的微信公众平台“MacTalk By 池建强”。本书撰写于2013年，书中时间线却不止于此。作者以一个70 后程序员的笔触，立于Mac 之上，讲述技术与人文的故事，有历史，有明天，有技术，有人生。70 多篇文章划分为六大主题：Mac、程序员与编程、科技与人文、人物、工具、职场。篇篇独立成文，可拆可合，随时阅读。</p>
+        <p>此外，作者还对原来散落在各篇文章中的Mac 技巧进行了统一的整理和规划，形成130 个Mac Tips，通过阅读这些技巧，读者既可以了解Mac，增长知识，又能够提高工作效率。</p>
+        <p>本书行文采用了一种技术和人生感悟相结合的风格，起于Mac 却不止Mac，文风幽默又能笔底见风雷。王小波说，“每一本书都应该有趣，对于一些书来说，有趣是它存在的理由；对于另一些书，有趣是它应该达到的标准”。本书就是一本达到了有趣标准的技术书，它不仅适合Mac 用户阅读，更值得所有技术人员随时翻阅。</p>
+      </div>
+      <div class="comment left-transition">
+        我是评论
+      </div>
+    </div>
+  </section>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

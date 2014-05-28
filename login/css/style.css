@@ -1,0 +1,64 @@
+body{
+	margin: 0;padding: 0;
+}
+
+/* nav start*/
+.nav{
+	background-color: rgb(90,153,168);
+	height: 20%;width: 100%;
+	color: #fff;
+	overflow: auto;
+}
+
+.nav a{	color: #fff; }
+.nav a i {margin-top:10px; }
+.nav h1{
+	font-size: 42px; line-height: 42px;
+	margin-left: 20%;padding-left: 10%;
+	font-family: "微软雅黑";
+	font-weight: lighter;
+	border-left: rgb(200,200,200) 2px solid;
+	height: 50px;
+}
+.nav #return-btn{
+	margin-left: 10%;
+	height: 100px;
+	float: left;
+}
+
+.nav .return-div{
+	border-right: 1px #DEDEDC solid;
+}
+
+/*nav end*/
+
+/*content start*/
+.content{
+	margin: 10% auto;
+	border: 2px rgb(200,200,200) solid;
+	width: 80%;height: 40%;
+	border-radius: 20px;
+}
+
+.content table{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing:10px 50px;
+	padding: 10% 0 10% 0;
+}
+
+.content td {
+	padding: 0 10% 0 10%;
+}
+
+.content #forgetpsw{
+	float: right;
+	font-size: 42px;
+	color: rgb(200,200,200);
+}
+.btn-lg{font-size:52px !important;border-radius:15px !important;}
+.form-control{border-radius:20px !important;height:80px !important;padding:6px 30px !important;font-size:32px !important;}
+/*content end*/
+
+/*content start*/
+/*content end*/

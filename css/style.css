@@ -16,6 +16,8 @@ body {
 }
 
 header {
+  position: relative;
+  z-index: 2;
   padding: 10px 20px;
   background: rgb(90,153,168);
 }
@@ -70,6 +72,47 @@ a {
 .nav-list > a > .icon-text {
   font-size: 8px;
   margin: 0 6px;
+}
+
+.search-box {
+  position: absolute;
+  z-index: 0;
+  top: 7px;
+  background: #555;
+  -webkit-transition: top .5s;
+  -moz-transition: top .5s;
+  -ms-transition: top .5s;
+  -o-transition: top .5s;
+  transition: top .5s;
+}
+
+.search-box + section {
+  margin-top: 0px;
+  -webkit-transition: margin-top .5s;
+  -moz-transition: margin-top .5s;
+  -ms-transition: margin-top .5s;
+  -o-transition: margin-top .5s;
+  transition: margin-top .5s;
+}
+
+.border-top {
+  margin: 0;
+  border-color: #555;
+}
+
+.search-wrap {
+  width: 100%;padding: 10px
+}
+
+.input-search {
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+.btn-confirm-search {
+  /*background: rgb(90,153,168);*/
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
 }
 
 .carousel-list {
@@ -152,11 +195,11 @@ footer {
 }
 
 footer .footer-item {
-  padding: 20px;
+  padding: 15px;
   width: 25%;
   text-align: center;
   font-weight: 2px;
-  font-size: 24px;
+  font-size: 22px;
   color: #fff;
 }
 
@@ -208,7 +251,7 @@ footer .active {
   cursor: pointer;
 }
 
-.tablist::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -239,9 +282,216 @@ footer .active {
 }
 
 .book-block {
-  padding: 10px 20px;
+  padding: 20px;
 }
 
 .book-block img {
-  width: 10%;
+  width: 20%;
+}
+
+.book-block .information-block {
+  margin-left: 20%;
+  padding: 10px;
+}
+
+.first-line {
+  height: 40px;
+}
+
+.information-block .title {
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.information-block .title:hover {
+  color: rgb(42,122,178);
+}
+
+.information-block .price {
+  font-size: 20px;
+  padding: 4px;
+  color: rgb(41,122,178);
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -ms-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.information-block .price:hover {
+  color: rgb(237,108,0);
+}
+
+.information-block .author {
+  color: rgb(185,185,185);
+}
+
+.information-block .description {
+  color: rgb(115,115,115);
+  margin-top: 10px;
+}
+
+/* ---- add for detail.html ---- */
+
+.detail {
+  background: rgb(250,250,250);
+}
+
+.book-detail {
+  padding: 40px 20px 20px 20px;
+}
+
+.book-detail img {
+  width: 30%;
+}
+
+.detail-block {
+  margin-left: 30%;
+  padding: 10px 20px;
+}
+
+.detail-block *:not(.title){
+  color: rgb(119,119,119);
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.detail-block .title {
+  color: rgb(73,51,53);
+  margin-bottom: 30px;
+}
+
+.detail-block .price {
+  font-size: 30px;
+}
+
+.btns {
+  padding: 20px;
+}
+
+.btns > button {
+  width: 48%;
+  padding: 20px;
+  border-radius: 8px;
+  border-width: 0;
+  font-size: 22px;
+  font-weight: bold;
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -ms-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+
+.btns > .buy {
+  background: rgb(255,154,102);
+  border: 2px solid rgb(255,154,102);
+  color: #fff;
+}
+
+.btns > .buy:hover {
+  background: rgb(255,70,24);
+}
+
+.btns > .add {
+  background: #fff;
+  color: rgb(119,119,119);
+  border: 2px solid rgb(204,204,204);
+}
+
+.btns > .add:hover {
+  background: #eee;
+}
+
+.detail > hr {
+  border-color: rgb(154,154,154);
+  margin: 0;
+}
+
+.detail-tab {
+  font-size: 22px;
+  height: 71px;
+  color: rgb(119,119,119);
+  position: relative;
+}
+
+.detail-tab > a {
+  position: absolute;
+  padding: 20px 0;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+.detail-tab > .left {
+  left: 0;
+}
+
+.detail-tab > .right {
+  right: 0;
+}
+
+.detail-tab > span {
+  width: 100%;
+  position: absolute;
+  padding: 20px 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.inner-detail {
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  left: 0;
+}
+
+.left-transition {
+  -webkit-transition: left .5s;
+  -moz-transition: left .5s;
+  -ms-transition: left .5s;
+  -o-transition: left .5s;
+  transition: left .5s;
+}
+
+.triangle > div{
+  border-width: 8px;
+  border-bottom-width: 13px;
+  border-style: solid;
+  border-color: transparent;
+  position: relative;
+}
+
+.triangle > .black {
+  border-bottom-color: rgb(154,154,154);
+  top: -21px;
+}
+
+.triangle > .white {
+  border-bottom-color: rgb(250,250,250);
+  top: -40px;
+}
+
+.inner-detail > .brief,
+.inner-detail > .comment {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  color: #666;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.inner-detail > .brief {
+  left: 0;
+}
+
+.inner-detail > .comment {
+  left: 100%;
 }

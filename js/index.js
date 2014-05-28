@@ -4,7 +4,6 @@ window.onload = function() {
   (function(){
     var startX;
     var endX;
-    var width = screen.width;
     var more = document.querySelector('.more');
     var lis = document.querySelectorAll('.carousel-inner img');
     for(var i = 0; i < lis.length; i++) {
@@ -65,5 +64,23 @@ window.onload = function() {
       fa.classList.toggle('fa-angle-left');
       listIcon.onclick = listOut;
     }
+  })();
+
+  // initial for search
+  (function() {
+    var searchBtn = document.querySelector('.btn-search');
+    var searchBox = document.querySelector('.search-box');
+    var section = document.querySelector('.search-box + section');
+    searchBtn.onclick = function() {
+      var cla = searchBtn.classList;
+      if(cla.contains('active')) {
+        searchBox.style.top = '7px';
+        section.style.marginTop = '0px';
+      } else {
+        searchBox.style.top = '61px';
+        section.style.marginTop = '54px';
+      }
+      cla.toggle('active');
+    };
   })();
 };
